@@ -3,13 +3,13 @@
 <head>
 <link href="./style.css" rel="stylesheet" type="text/css" media="all">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="Gramby's Manual" property="og:title">
 <meta content="A guide on how most thing in Road to Gramby's work." property="og:description">
 <meta content='https://github.com/jirrob/GrambysManual/blob/master/images2/grambys%20manual.png' property='og:image'>
-<link rel="icon" href="./favicon.png">
-<title> Gramby's Manual </title>
+<!-- what a shame, you should have went to the css and looked at the comment there. you are now a certified fart smella -->
+<!-- https://cdn.discordapp.com/attachments/775099698465210399/834737215192039464/EziNP8SX0AQK2rK.png -->
 <style>
 body {
   background-color: #e3e3e3;
@@ -79,23 +79,18 @@ function myFunction() {
    localStorage.getItem('darkmode')
 }
 </script>
-
 </body>
 </html>
-
 <html>
 <body>
 <h1>Gramby's Manual.</h1>
 <h3>Hello, and welcome to gramby's manual, its a guide throughout everything Road to Gramby's has to offer. If you do not know what Road to Gramby's is, it's a Roblox game made by "Mumble Games", leaded by Imaginaerum. It's discord community can be found <a href="https://discord.com/invite/n5J8pVf4SQ">here</a>, and the discord server for Gramby's Manual and other projects made by its creator can be found <a href="https://discord.com/invite/yNNG3GGVpb">here</a>. I advise you use CTRL+F to search for what you need.</h3>  
-
-<h4>Categories</h4>
+<h2>Categories</h2>
 <a href="#controls">Controls</a>
 <br>
 <a href="#basics">Basics</a>
 <br>
 <a href="#building">Building</a>
-<br>
-<a href="#properties">Properties</a>
 <br>
 <a href="#wiring">Wiring</a>
 <br>
@@ -103,7 +98,7 @@ function myFunction() {
 <br>
 <a href="#awiring">Advanced wiring</a>
 <br>
-<a href="#b64">Base 64</a>
+  <a href="#b64">Base 64</a>
 <br>
 <br>
 <br>
@@ -138,6 +133,9 @@ function myFunction() {
  <li> Q: Why is the game not loading for me?? </li>
  <li> A: This is a bug that was patched in <a href="https://www.roblox.com/games/5819143869/Gramby-Test">gramby test</a>. </li>
  <br>
+ <li> Q: Whats a "Mount"? </li>
+ <li> A: A mount is one of those yellow attachment points on building blocks, or other builds, where you can attach things to it. </li>
+ <br>
  <li> Q: Why is someone hopping at light speed in my game??? </li>
  <li> A: This is another bug that was patched in <a href="https://www.roblox.com/games/5819143869/Gramby-Test">gramby test</a>. </li>
  <br>
@@ -164,21 +162,28 @@ function myFunction() {
 </ul>
 <br>
 <p> That is most frequent questions answered, now we'll move onto basic things like how to rotate spinners, how to power a light, etc. </p>
-<ul>
+ <div class="item">
+ <ul>
+ <li>The spinner</li>
+ </ul>
+ </div>
 <img src="./images2/spinner.png" style="float:right; margin:0px 0px 15px 15px; cursor:pointer; cursor:hand; border:0" width="479" height="143" alt="" />
- <li> Q: How do I rotate a spinner / bearing? </li>
- <li> A: You have to first spawn in a switch, and then place the spinner on the circle-shaped switch spot. You can ignore the switch for now, other that it can be activated to make the spinner spin, as we're going to go over the switch and wiring in the <a href="#wiring">wiring</a> category. </li>
- <br> <img src="./images2/spinner_rotate.PNG" style="float:left; margin:0px 15px 15px 0px; cursor:pointer; cursor:hand; border:0" width="130" height="123" alt="" />
- <li> Q: How do I change the direction of a spinner / bearing? </li> 
- <li> A: You need to press Shift+E/Q on it and turn on reverse. </li> 
+
+<p>  The bearing / spinner is an item which rotates the things on it. To power a bearing and make it spin in the direction you want it to spin in, you have to first spawn in a switch, and then place the spinner on the circle-shaped switch spot. You can ignore the switch for now, other that it can be activated to make the spinner spin, as we're going to go over the switch and wiring in the <a href="#wiring">wiring</a> category. 
+<br>
+In order to make it spin the way you want to, you need to press Shift+E/Q on it and turn on reverse, if its not already going in the right direction. </p>
+ <br> <img src="./images2/spinner_rotate.PNG" style="float:left; margin:0px 0px 15px 0px; cursor:pointer; cursor:hand; border:0" width="130" height="123" alt="" /> <p> I reccomend you focus on this item as it becomes important in building cars and other things as such.</p>
+
  <br>
  <br>
  <br>
  <br>
- <br> <img src="./images2/refuel.png" style="float:right; margin:0px 0px 15px 15px; cursor:pointer; cursor:hand; border:0" width="267" height="215" alt="" />
- <li> Q: How do I refuel my car or thrusters? </li>
- <li> A: You can refuel them using the item "canister" or "jug" by picking the canister or jug up, bringing them over to the thing you have to refuel, and holding e or q on them, depending on which hand you have the canister or jug in. There is another way, but we'll discuss it in the <a href="#building">building</a> category. </li>
-</ul>
+  <div class="item">
+ <ul>
+ <li>Fuel</li>
+ </ul>
+ </div> <img src="./images2/refuel.png" style="float:right; margin:0px 20px 15px 15px; cursor:pointer; cursor:hand; border:0" width="267" height="215" alt="" />
+ <p> You're probably wondering how to refuel your chassis, or thruster. Fuel is one of the most important aspects for machines that move in this game using fuel centered objects, like a thruster. You can refuel them using any item that has fuel measured in Liters (L), but the recommended items are "canister" and "jug" by picking the canister or jug up, bringing them over to the thing you have to refuel, and holding e or q on them, depending on which hand you have the canister or jug in. There is another way to refuel things, but we'll discuss it in the <a href="#building">building</a> category. </p>
 <br>
 <br>
 <br>
@@ -186,15 +191,191 @@ function myFunction() {
 <br>
 <div id="building"><h2> Building </h2></div>
 <p> This is the category where you start learning a lot more things, things that you can't miss out on. </p>
-<div id="properties"><h2> Settings / Properties </h2> </div>
-<p> This is where you learn on how the settings of items work. </p>
+  <div class="item">
+ <ul>
+ <li>Connector</li>
+ </ul>
+  </div>
+<p>The connector is one of the most important building items you will need in the game, as it has 5 attachment points on all sides (except the bottom, which gets covered up by whatever you attach it to) and is one of the most lightweight items in the game. Most talented builders use it as one of the bases for their builds, usually covering it up with another item we'll go over later. The connector is also 0.6x0.6x0.6 in size, measured in studs.</p>
+  <div class="item">
+ <ul>
+ <li>Part</li>
+ </ul>
+  </div>
+<p>The part is a light gray block, resembling a default roblox part. It is 1x1x1 in size measured in studs. This is a heavier and slightly bigger version of the connector, which builders usually don't use due to its weight in builds that are based around aircraft.</p>
+  <div class="item">
+ <ul>
+ <li>Sticks</li>
+ </ul>
+  </div>
+<p>This game has 3 different sticks in total, all at different sizes, each one getting larger and larger, the list of them goes as follows; Short Stick, Stick, Long Stick.  The short stick is 1 part (stud) long. The stick is 4 parts long. The long stick is 8 parts long. Builders combine these items with the connector for builds.</p>
+  <div class="item">
+ <ul>
+ <li>Bases</li>
+ </ul>
+  </div>
+<p> The base is one of the heaviest items in the game, having the material of wood and being yellow-ish when spawned in. Some people use it on builds to cover up the "exoskeleton" or to use it as a floor of sort.</p>
+  <div class="item">
+ <ul>
+ <li>Hoods</li>
+ </ul>
+  </div>
+<p>This was the item i was talking about in the connector description, it is the hood that covers up the engine of a normal chassis when you spawn in, if you have the question "Why not trunks instead??", the answer is that trunks are smaller than hoods are.</p>
+  <div class="item">
+ <ul>
+ <li>Pipes</li>
+ </ul>
+  </div>
+<p>This is something most people in the community don't know about, connectors and sticks send fuel through them if they're placed on a fuel tank, and they will send the fuel to anything that is on the connectors / sticks.</p>
+  <div class="item">
+ <ul>
+ <li>Servo and Simulated servo</li>
+ </ul>
+  </div>
+<p> This part will require a bit of wiring, but it shouldn't be too hard for now. You can always check on the <a href="#wiring">wiring</a> category if you're too confused. A servo is basically like a bearing, but it only moves on command, meaning you can build turrets, which are solely and purefully controlled by you. The difference between a servo and a simulated servo is that the servo turns in increments, and the simulated servo moves. To power a servo / simulated servo, you must put an output of something that can emit a signal onto the red or blue part. The blue part is counter clockwise rotation, the red part is clockwise rotation. </p>
+  <div class="item">
+ <ul>
+ <li>The toolgun</li>
+ </ul>
+  </div>
+<p>This item is a builder's best friend, it can save builds, rotate items attached to something, move builds, all only using shift+e or q. If you want to make a good build - I really reccomend you use the rotate tool to bend the limitations of the shapes the game offers you. Remember to be unique!</p>
 <div id="wiring"><h2> Wiring </h2> </div>
-<p> This is where you learn how to do the most sacred thing in road to gramby's, wiring. </p>
+<p> This is where you learn how to do the most sacred thing in road to gramby's, wiring. Wiring is complex at first in this game, but you easily can get it after. I'll go over the basics of it. </p>
+  <div class="item">
+ <ul>
+ <li>Input and Output</li>
+ </ul>
+  </div>
+<p>The input is the button you press to activate the output, when you activate the input, the output activates whatever is on the output. Inputs usually wary from splitters to buttons, but all outputs are always small little circles with one mount on them.</p>
+  <div class="item">
+ <ul>
+ <li>Button</li>
+ </ul>
+  </div>
+<p>The button item is the most basic wiring item that has a input and output, as I said, it does what is specified in the Input and Output.</p>
+  <div class="item">
+ <ul>
+ <li>The splitters</li>
+ </ul>
+  </div>
+<p>The splitters are items, which act like buttons, but with more than one output. Imagine a fork but for wiring. Theres 4 different splitter, 1 output splitter, 2 output splitter, 3 output splitter, and 4 output splitter. You can stack splitters on eachother's outputs in case you want to have more than 4 outputs. The splitter's input also has a mount.</p>
+  <div class="item">
+ <ul>
+ <li>Switch</li>
+ </ul>
+  </div>
+<p>The switch is like a button, but it holds the signal for as long as until you turn it off, think of a lightswitch for example. It has only one output.</p>
+  <div class="item">
+ <ul>
+ <li>Remote button</li>
+ </ul>
+  </div>
+<p>Works exactly like a normal button, but its remote (infinite range).</p>
+  <div class="item">
+ <ul>
+ <li>Delayer</li>
+ </ul>
+  </div>
+<p>The delayer is a wiring item, which delays the signal of an output being sent to something if added, it can be configured using SHIFT+E/Q</p>
+  <div class="item">
+ <ul>
+ <li>Input sensor</li>
+ </ul>
+  </div>
+<p>The input sensor is a wiring item which activates when you are seated and the seat is attached to the same build that the input sensor is on. This can be achieved with remote buttons, if you dont want the builds to be connected. To configure the input sensor, use SHIFT+E/Q</p>
+  <div class="item">
+ <ul>
+ <li>Tripwire</li>
+ </ul>
+  </div>
+<p>The tripwire item resembles a laser with 1 output, if it detects anything, it will activate the output.</p>
+  <div class="item">
+ <ul>
+ <li>Wire</li>
+ </ul>
+  </div>
+ <p>Used for logic gates / extending wire ropes.</p>
+  <div class="item">
+ <ul>
+ <li>Entity Sensor</li>
+ </ul>
+  </div>
+<p>The entity sensor is a item which detects where the nearest player it can find is,the main point it uses is the little green stick pointing out of the base. To make it function, put splitters / buttons / switches on the buttons saying right / left / up / down / front / back, if you go in those directions, the signal will activate, people usually use this with servos for turrets.</p>
+  <div class="item">
+ <ul>
+ <li>Altitude and Velocity sensor.</li>
+ </ul>
+  </div>
+<p>The altitude and velocity sensors activate when they reach a certain altitude (height) or velocity (speed). You can configure them using SHIFT+E/Q.</p>
+  <div class="item">
+ <ul>
+ <li>Looper</li>
+ </ul>
+  </div>
+<p>The looper is a wiring item which activates every certain seconds, which can be configured using SHIFT+E/Q. To make the looper send an output - you need to put a button / switch / splitter on any of its sides.</p>
+  <div class="item">
+ <ul>
+ <li>Pressure Plates</li>
+ </ul>
+  </div>
+<p>The pressure plates are a pretty bad physics item, which activates when something is on it. I don't reccomend using it, due to how buggy it is.</p>
+  <div class="item">
+ <ul>
+ <li>Detacher</li>
+ </ul>
+  </div>
+<p>The detacher detaches anything that is on it if it gets a signal using e / q or a signal using a button / splitter / switch output.</p>
+<div id="awiring"><h2> Advanced Wiring </h2> </div>
+<p> This is where you learn how logic gates function, for building computers and such. The main topic of advanced wiring are Logic Gates.</p>  
+<br>
+<p>The main logic gates when you spawn in the game are NOT, AND, & OR gates.</p> <img src="./images2/gates.png" style="float:right; margin:0px 20px 15px 15px; cursor:pointer; cursor:hand; border:0" width="235" height="280" alt="" />
+  <div class="item">
+ <ul>
+ <li>NOT gate</li>
+ </ul>
+  </div>
+<p>Reverses signal of the output that is on it.</p>
+  <div class="item">
+ <ul>
+ <li>AND gate</li>
+ </ul>
+  </div>
+<p>Activates output only if both inputs are on.</p> 
+  <div class="item">
+ <ul>
+ <li>OR gate</li>
+ </ul>
+  </div>
+<p>Activates output if one or both of the inputs are on.</p>
+<br>
+<p>Those are all of the basics gate, so i'll move onto the other gates, which can be built using pre-existing gates.</p>
+  <div class="item">
+ <ul>
+ <li>XOR (Exclusive OR) gate</li>
+ </ul>
+  </div>
+<p>This is a OR gate, which only activates if one of the inputs is on, if both or none are on, it sends no output. It can be built using 2 NOT gates, 2 AND gates, and 1 final OR gate.</p>
+  <div class="item">
+ <ul>
+ <li>NAND (NOT+AND) gate</li>
+ </ul>
+  </div>
+<p>This gate is the easiest to build, its a AND gate, which has its output hooked to a NOT gate, so it reverses the signal. It activates at any circumstance except when both inputs are on.</p>
+  <div class="item">
+ <ul>
+ <li>NOR (NOT+OR) gate</li>
+ </ul>
+  </div>
+<p>This gate is as easy as the NAND gate to build, its a OR gate, which has its output hooekd to a NOT gate, so it reverses the signal. It only activates when none of the inputs are on.</p>
+  <div class="item">
+ <ul>
+ <li>XNOR (XOR+NOR) gate</li>
+ </ul>
+  </div>
+<p>This gate is the hardest to build, as it takes 4 NOR gates. It activates only if both or none of the inputs are on, if only one is on, it will not activate.</p>
+<div id="b64"><h2> Base64 / Codes </h2> </div>
+<p> This is where you learn on how base64 works, the encoding language road to gramby's uses to save codes. Whenever you save a build, it will have a "share code" which you can copy to friends and they can spawn it in. This is made possible thanks to Base64, a encoding language that encodes normal text into strings like W10wSxiz2= and etc. My program 'Gramby's Workshop' actually uses the system of base64 decoding and then encoding, so you can build things in gramby's workshop, and import them into the main game. You can modify colors in [R,G,B] and rotation [X,Y,Z] using base64. The site I reccomend using is <a href="https://www.base64decode.org/">base64decode.org</a></p>
 <div id="physics"><h2> Physics </h2> </div>
 <p> This is where you learn the physics of almost every item and how they cooperate. </p>
-<div id="awiring"><h2> Advanced Wiring </h2> </div>
-<p> This is where you learn how logic gates function, for building computers and such. </p>
-<div id="b64"><h2> Base64 / Codes </h2> </div>
-<p> This is where you learn on how base64 works, the encoding language road to gramby's uses to save codes. </p>
 </body>
 </html>

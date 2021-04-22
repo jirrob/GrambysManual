@@ -1,27 +1,12 @@
-h1 {
-  font-family: 'Ubuntu', sans-serif;
-}
-h2 {
-  font-family: 'Ubuntu', sans-serif;
-}
-h3 {
-  font-family: 'Ubuntu', sans-serif;
-}
-h4 {
-  font-family: 'Ubuntu', sans-serif;
-}
-h5 {
-  font-family: 'Ubuntu', sans-serif;
-}
-h6 {
-  font-family: 'Ubuntu', sans-serif;
-}
-p {
-    font-family: 'Ubuntu', sans-serif;
+h1, h2, h3, h4, h5, h6, p, li {
+font-family: 'Open Sans', sans-serif;
 }
 a {
-  font-family: 'Ubuntu', sans-serif;
+font-family: 'Open Sans', sans-serif;
+text-decoration:  none;
 }
-li {
-  font-family: 'Ubuntu', sans-serif;
+.item {
+  font-size:  20px;
 }
+/* thanks for snooping in here, you are now a certified smart fella. */ 
+/* https://cdn.discordapp.com/attachments/775099698465210399/834704763442036776/EzjatjOXEAIh3HS.png */

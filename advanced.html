@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="./style.css" rel="stylesheet" type="text/css" media="all">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="Gramby's Manual" property="og:title">
+<meta content="A guide on how most thing in Road to Gramby's work." property="og:description">
+<meta content='https://github.com/jirrob/GrambysManual/blob/master/images2/grambys%20manual.png' property='og:image'>
+<link rel="icon" href="./favicon.png">
+<title> Gramby's Manual </title>
+<style>
+body {
+  background-color: #e3e3e3;
+  color: #1c1c1c;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+a:link {
+  color: #4f4dc9;
+}
+a:visited {
+  color: #9d00ff;
+}
+a:hover {
+  color: #1b18c7;
+}
+a:active {
+  color: #110f7f;
+}
+.dark-mode {
+  background-color: #1c1c1c;
+  color: #e3e3e3;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+.dark-mode a:link {
+  color: #edffe8
+} 
+.dark-mode a:visited {
+  color: #b8ffa6
+}
+.dark-mode a:hover {
+  color: #9ba897;
+}
+.dark-mode a:active {
+  color: #276b16;
+}
+.dark-mode button {
+   background-color: #1c1c1c;
+   color: #e3e3e3;
+   outline: 1px dashed #e3e3e3;
+}
+button { 
+  background-color: #e3e3e3;
+  color: #1c1c1c;
+  outline: 1px dashed #1c1c1c;
+}
+p, h1, h2, h3, h4, h5, h6, li, a {
+  -webkit-transition: color 500ms linear;
+  -ms-transition: color 500ms linear;
+  transition: color 500ms linear;
+}
+</style>
+  </head>
+<body>
+
+<button onclick="myFunction()">Toggle night mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+   localStorage.setItem('darkmode', 'true')
+   localStorage.setItem('darkmode', 'false')
+   localStorage.getItem('darkmode')
+}
+</script>
+</body>
+</html>
+<html>
+<body>
+<h1>Advanced Techniques</h1>
+<h3>This is the advanced page, where you learn building techniques after you learn the basics of all things neccessary.</h3>  

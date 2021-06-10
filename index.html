@@ -103,6 +103,25 @@
             localStorage.getItem('darkmode')
         }
     </script>
+    <script>
+        var darkMode = localStorage.getItem("darkmode");
+        if (darkMode == "true") {
+            darkMode = null
+            localStorage.setItem('darkmode', darkMode)
+            myFunction()   
+        }
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            if (darkMode == "true") {
+                darkMode = "false"
+                localStorage.setItem("darkmode", darkMode)   
+            } else {
+                darkMode = "true"
+                localStorage.setItem('darkmode', darkMode)
+            }
+        }
+    </script>
 </body>
 
 </html>
